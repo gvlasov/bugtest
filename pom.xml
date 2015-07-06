@@ -6,5 +6,10 @@
     <groupId>org.tendiwa.lexeme</groupId>
     <artifactId>lexeme</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>com.jcabi</groupId>
+        <artifactId>jcabi</artifactId>
+        <version>1.17</version>
+    </parent>
 
 </project>
