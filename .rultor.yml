@@ -1,1 +1,3 @@
-
+deploy:
+  script: |-
+    mvn clean deploy -Pqulice
