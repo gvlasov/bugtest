@@ -50,34 +50,7 @@ public final class Yes {
      */
     public Yes() {
         this.translations = new HashMap<String, String>();
-        this.translations.put("en", "yes");
-        this.translations.put("de", "ja");
-        this.translations.put("fr", "oui");
-        this.translations.put("ru", "да");
-        this.translations.put("es", "sí");
         this.translations.put("ua", "так");
         this.translations.put("jp", "はい");
-    }
-
-    /**
-     * Translates word yes to a language.
-     * @param locale Locate specifying the language.
-     * @return Word yes translated to a language.
-     */
-    public String translate(final Locale locale) {
-        final String language = locale.getLanguage();
-        final String translation = this.translations.get(language);
-        if (translation == null) {
-            throw new IllegalArgumentException(
-                String.format(
-                    new StringBuilder()
-                        .append("Language %s is not supported, you can create ")
-                        .append("an issue on Github and we'll fix it")
-                        .toString(),
-                    language
-                )
-            );
-        }
-        return translation;
     }
 }
