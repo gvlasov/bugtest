@@ -51,5 +51,6 @@ public final class Yes {
     public Yes() {
         this.translations = new HashMap<String, String>();
         this.translations.put("ua", "так");
+        this.translations.put("jp", "はい");
     }
 }
